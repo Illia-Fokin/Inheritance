@@ -7,13 +7,13 @@ import lombok.*;
 public class Dog extends Mammal{
     private String breed; // additional field
 
-    Dog(String name, double weight, int age, String place, String species, String woolColor){
+    Dog(String name, double weight, int age, String place, String woolColor, String breed){
         super(name, weight, age, place, woolColor);
-        this.breed = species;
+        this.breed = breed;
     }
-    Dog(String name, double weight, int age, String species, String woolColor){
+    Dog(String name, double weight, int age, String woolColor, String breed){
         super(name, weight, age, woolColor);
-        this.breed = species;
+        this.breed = breed;
     }
     @Override
     public void eat(){
